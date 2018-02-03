@@ -5,6 +5,7 @@
  */
 package dao;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
@@ -85,7 +86,7 @@ public class Constants {
 //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Stream data region">
-    public static final String STREAM_FILE_WITH_PATH = "/dev/ttyUSB0";
+    public static final String STREAM_FILE_WITH_PATH = "COM1";
     
     public static final List<String> STREAM_UNWANTED_STRINGS = Arrays.asList("/x0000", "/r000");
     public static final String STREAM_KEY_VALUE_DELIMITER = "=";
@@ -93,8 +94,9 @@ public class Constants {
     
     //<editor-fold defaultstate="collapsed" desc="Print region">
     public static final String TERMINAL_PRINT_COMMAND = "lpr -o portrait -o fit-to-page -o media=A4";
-    public static final String PRINT_FOLDER_RMPU = "reports/";
-    public static final String PRINT_FOLDER_ALTERNATOR = "reports/";
+    public static final String PRINT_FOLDER_RMPU = "reports" + File.separator;
+    public static final String PRINT_FOLDER_ALTERNATOR = "reports" + File.separator;
+    public static final String PRINTER_NAME = "HP LaserJet 1020";
 //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Label region">

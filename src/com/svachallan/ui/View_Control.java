@@ -28,6 +28,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import log.Report;
+import print.Printer;
 
 /**
  *
@@ -117,7 +118,7 @@ public class View_Control extends javax.swing.JFrame {
     
     private boolean allDataValidForSavingAlternator(){
         boolean valid = true;
-        System.out.println("Trying to save RMPU");
+        System.out.println("Trying to save Alternator");
         for(Map.Entry<String, String> entry : AlternatorData.entrySet()){
             // Ignoring some of the non required data
             if(entry.getKey().equals(Constants.ALTERNATOR_ACTION_INPUT) || entry.getKey().equals(Constants.ALTERNATOR_MAKE_INPUT))
@@ -747,10 +748,11 @@ public class View_Control extends javax.swing.JFrame {
             System.out.println("RMPU printing, filename -> " + fileName);
             if(fileName != null){
                 Thread.sleep(1000);
-                Runtime runtime = Runtime.getRuntime();
-                runtime.exec(Constants.TERMINAL_PRINT_COMMAND + " " + fileName);
+                //Runtime runtime = Runtime.getRuntime();
+                //runtime.exec(Constants.TERMINAL_PRINT_COMMAND + " " + fileName);
+                boolean printed = Printer.printPDF(fileName);
                 System.out.println("RMPU report printed");
-                return true;
+                return printed;
             }
             else{
                 System.out.println("Did not print RMPU bcoz of no file name");
@@ -770,9 +772,10 @@ public class View_Control extends javax.swing.JFrame {
             String fileName = report.generateAlternatorReport(AlternatorData);
             if(fileName != null){
                 Thread.sleep(1000);
-                Runtime runtime = Runtime.getRuntime();
-                runtime.exec(Constants.TERMINAL_PRINT_COMMAND + " "+ fileName);
-                return true;
+                //Runtime runtime = Runtime.getRuntime();
+                //runtime.exec(Constants.TERMINAL_PRINT_COMMAND + " "+ fileName);
+                boolean printed = Printer.printPDF(fileName);
+                return printed;
             }
             else
                 return false;
@@ -1836,8 +1839,8 @@ public class View_Control extends javax.swing.JFrame {
             desktop.open(reportsDir);
             
             // pressing F9 to hide side bar
-            robot.keyPress(KeyEvent.VK_F9);
-            robot.keyRelease(KeyEvent.VK_F9);          
+            //robot.keyPress(KeyEvent.VK_F9);
+            //robot.keyRelease(KeyEvent.VK_F9);          
             
         }
         catch (Exception e){
