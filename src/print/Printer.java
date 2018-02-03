@@ -10,6 +10,7 @@ package print;
  * @author Man of Steel
  */
 
+import dao.Constants;
 import java.awt.print.PrinterJob;
 import java.io.File;
 
@@ -23,8 +24,8 @@ public class Printer {
     public static boolean printPDF(String filePath){
         try {
             PDDocument document = PDDocument.load(new File(filePath));
-            
-            PrintService myPrintService = findPrintService("HP LaserJet 1020");
+            String printerName = System.getenv(Constants.PRINTER_SYSTEM_ENVIRONMENT_VARIABLE_NAME);
+            PrintService myPrintService = findPrintService(printerName);
             //PrintService myPrintService = PrintServiceLookup.lookupPrintServices(null, null)[0];
             
             PrinterJob job = PrinterJob.getPrinterJob();

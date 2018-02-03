@@ -97,6 +97,7 @@ public class Constants {
     public static final String PRINT_FOLDER_RMPU = "reports" + File.separator;
     public static final String PRINT_FOLDER_ALTERNATOR = "reports" + File.separator;
     public static final String PRINTER_NAME = "HP LaserJet 1020";
+    public static final String PRINTER_SYSTEM_ENVIRONMENT_VARIABLE_NAME = "RAILWAY_PRINTER";
 //</editor-fold>
     
     //<editor-fold defaultstate="collapsed" desc="Label region">
