@@ -11,10 +11,16 @@ import gnu.io.SerialPort;
 import gnu.io.CommPort;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Robot;
 import java.awt.Toolkit;
+import java.awt.event.InputEvent;
 import java.io.File;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
@@ -30,6 +36,8 @@ public class Launcher extends javax.swing.JFrame {
     InputStreamReader inputStreamReader;
     OutputStreamWriter outputStreamWriter;
     SerialPort serialPort = null;
+    
+    View_Control view;
 
     private boolean streamEstablished = false;
     private boolean essentialsChecked = false;
@@ -120,6 +128,7 @@ public class Launcher extends javax.swing.JFrame {
         setType(java.awt.Window.Type.POPUP);
 
         main_theme_label.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/theme.jpg"))); // NOI18N
+        main_theme_label.setOpaque(true);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -172,34 +181,36 @@ public class Launcher extends javax.swing.JFrame {
             public void run() {
                 Launcher launcher = new Launcher();
                 launcher.setVisible(true);
-                
-                try {
-                    
-                    UIManager.put("OptionPane.messageFont", new Font("Arial", Font.BOLD, 20));
-                    UIManager.put("OptionPane.buttonFont", new Font("Arial", Font.PLAIN, 20));
+                Thread bgThread = new Thread(() -> {
+                    try {
 
-                    launcher.checkEssentials();
-                    launcher.establishDataStream();
+                        UIManager.put("OptionPane.messageFont", new Font("Arial", Font.BOLD, 20));
+                        UIManager.put("OptionPane.buttonFont", new Font("Arial", Font.PLAIN, 20));
 
-                    Thread.sleep(5000);
-                
-                    if (launcher.isStreamEstablished() && launcher.isEssentialsChecked()) {
-                        
-                        View_Control view = new View_Control();
-                        view.setInputStreamReader(launcher.inputStreamReader);
-                        view.setOutputStreamWriter(launcher.outputStreamWriter);
-                        view.setupAndStartAllThreads();
+                        launcher.checkEssentials();
+                        launcher.establishDataStream();
+
+                        Thread.sleep(5000);
+
+                        if (launcher.isStreamEstablished() && launcher.isEssentialsChecked()) {
+
+                            View_Control view = new View_Control();
+                            view.setInputStreamReader(launcher.inputStreamReader);
+                            view.setOutputStreamWriter(launcher.outputStreamWriter);
+                            view.setupAndStartAllThreads();
+                            launcher.setVisible(false);
+                            System.out.println("Moving to view control");
+                            view.setVisible(true);
+
+                        }
+
+                    } catch (Exception exception) {
+                        JOptionPane.showMessageDialog(null, "Cannot establish connection, Check Hardware Port and try again. The application will exit now!" + exception);
                         launcher.setVisible(false);
-                        System.out.println("Moving to view control");
-                        view.setVisible(true);
-                        
+                        System.exit(-1);
                     }
-                    
-                } catch (Exception exception) {
-                    JOptionPane.showMessageDialog(null, "Cannot establish connection, Check Hardware Port and try again. The application will exit now!" + exception);
-                    launcher.setVisible(false);
-                    System.exit(-1);
-                }
+                });
+                bgThread.start();
             }
         });
     }

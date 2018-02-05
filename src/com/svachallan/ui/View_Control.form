@@ -27,36 +27,40 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="mainScrollPane" alignment="1" pref="2001" max="32767" attributes="0"/>
+          <Component id="mainScrollPane" alignment="1" pref="1365" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="mainScrollPane" alignment="1" pref="1040" max="32767" attributes="0"/>
+          <Component id="mainScrollPane" alignment="1" pref="740" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JScrollPane" name="mainScrollPane">
+      <Properties>
+        <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
+        <Property name="verticalScrollBarPolicy" type="int" value="21"/>
+      </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel1">
+        <Container class="javax.swing.JPanel" name="mainPanel">
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="mainTabbedPane" min="-2" pref="2001" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="mainTabbedPane" min="-2" pref="1361" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="139" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="mainTabbedPane" min="-2" pref="1032" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
+                      <Component id="mainTabbedPane" min="-2" pref="731" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="107" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -71,7 +75,7 @@
                   <Color blue="33" green="0" red="33" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Monospaced" size="40" style="1"/>
+                  <Font name="Monospaced" size="30" style="1"/>
                 </Property>
               </Properties>
 
@@ -90,22 +94,6 @@
                     <Property name="useNullLayout" type="boolean" value="true"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel3">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Monospaced" size="36" style="3"/>
-                        </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="66" red="66" type="rgb"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="CURRENT"/>
-                      </Properties>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="760" y="110" width="170" height="-1"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
                     <Component class="javax.swing.JLabel" name="jLabel11">
                       <Properties>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -118,7 +106,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="990" y="40" width="-1" height="-1"/>
+                          <AbsoluteConstraints x="790" y="0" width="-1" height="50"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -130,7 +118,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="0" y="0" width="-1" height="1130"/>
+                          <AbsoluteConstraints x="0" y="0" width="320" height="680"/>
                         </Constraint>
                       </Constraints>
 
@@ -140,19 +128,21 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="division_label1" min="-2" max="-2" attributes="0"/>
                                       <Component id="view_reports_rmpu_btn" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
-                                      <Component id="rmpu_serial_input" min="-2" pref="255" max="-2" attributes="0"/>
                                       <Component id="serial_number_label" min="-2" max="-2" attributes="0"/>
                                       <Component id="division_label" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="rmpu_division_input" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
-                                      <Component id="division_label1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="rmpu_make_input" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
                                       <Component id="rmpu_pp_input" alignment="0" min="-2" pref="79" max="-2" attributes="0"/>
                                       <Component id="rmpu_npp_input" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="rmpu_save_input" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
                                       <Component id="rmpu_print_input" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="rmpu_serial_input" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="rmpu_division_input" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="rmpu_make_input" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="rmpu_save_input" alignment="0" pref="210" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace pref="102" max="32767" attributes="0"/>
+                                  <EmptySpace pref="28" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -162,26 +152,26 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="serial_number_label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="rmpu_serial_input" min="-2" pref="61" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                  <Component id="rmpu_serial_input" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="division_label" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="rmpu_division_input" min="-2" pref="61" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                  <Component id="rmpu_division_input" min="-2" pref="50" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="division_label1" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="rmpu_make_input" min="-2" pref="61" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="rmpu_make_input" min="-2" pref="50" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="rmpu_pp_input" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="rmpu_npp_input" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="rmpu_save_input" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="rmpu_print_input" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="view_reports_rmpu_btn" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <EmptySpace pref="234" max="32767" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="rmpu_save_input" min="-2" pref="84" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="rmpu_print_input" min="-2" pref="86" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="view_reports_rmpu_btn" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <EmptySpace pref="38" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -190,7 +180,7 @@
                         <Component class="javax.swing.JLabel" name="serial_number_label">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="1"/>
+                              <Font name="Tahoma" size="20" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -209,7 +199,7 @@
                         <Component class="javax.swing.JLabel" name="division_label">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="1"/>
+                              <Font name="Tahoma" size="20" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -228,7 +218,7 @@
                         <Component class="javax.swing.JLabel" name="division_label1">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Tahoma" size="24" style="1"/>
+                              <Font name="Tahoma" size="20" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -283,7 +273,7 @@
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/images/print_icon.png"/>
+                              <Image iconType="3" name="/images/print_icon_small.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Print"/>
                             <Property name="toolTipText" type="java.lang.String" value="Click to print the current data"/>
@@ -304,7 +294,7 @@
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/images/save_icon.png"/>
+                              <Image iconType="3" name="/images/save_icon_small.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Save"/>
                             <Property name="toolTipText" type="java.lang.String" value="Click to save current data"/>
@@ -332,16 +322,6 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JSeparator" name="jSeparator1">
-                      <Properties>
-                        <Property name="orientation" type="int" value="1"/>
-                      </Properties>
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="1410" y="190" width="10" height="440"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
                     <Container class="javax.swing.JPanel" name="jPanel4">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -351,7 +331,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="450" y="170" width="890" height="470"/>
+                          <AbsoluteConstraints x="320" y="70" width="740" height="410"/>
                         </Constraint>
                       </Constraints>
 
@@ -359,73 +339,78 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLabel2" min="-2" pref="244" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                                          <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="122" max="-2" attributes="0"/>
+                                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Group type="103" groupAlignment="0" attributes="0">
-                                                  <Group type="102" attributes="0">
-                                                      <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
-                                                      <Component id="jLabel16" min="-2" pref="135" max="-2" attributes="0"/>
+                                              <Component id="jLabel16" alignment="0" min="-2" pref="135" max="-2" attributes="0"/>
+                                              <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel19" alignment="0" min="-2" pref="270" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Group type="103" groupAlignment="1" attributes="0">
+                                                      <Component id="rmpu_cd2_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                                      <Component id="rmpu_blower_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                                      <Component id="rmpu_cd1_r" min="-2" pref="130" max="-2" attributes="0"/>
                                                   </Group>
-                                                  <Group type="102" alignment="1" attributes="0">
-                                                      <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                                                      <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="rmpu_blower_y" min="-2" pref="130" max="-2" attributes="0"/>
+                                                      <Component id="rmpu_cd1_y" min="-2" pref="130" max="-2" attributes="0"/>
+                                                      <Component id="rmpu_cd2_y" min="-2" pref="130" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="rmpu_cp1_r" min="-2" pref="130" max="-2" attributes="0"/>
+                                                      <Component id="rmpu_cp2_r" min="-2" pref="130" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="rmpu_cp2_y" min="-2" pref="130" max="-2" attributes="0"/>
+                                                      <Component id="rmpu_cp1_y" min="-2" pref="130" max="-2" attributes="0"/>
                                                   </Group>
                                               </Group>
-                                              <Component id="jLabel18" alignment="1" min="-2" max="-2" attributes="0"/>
                                           </Group>
-                                          <EmptySpace min="42" pref="42" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="rmpu_blower_b" min="-2" pref="130" max="-2" attributes="0"/>
+                                              <Component id="rmpu_cd1_b" min="-2" pref="130" max="-2" attributes="0"/>
+                                              <Component id="rmpu_cd2_b" min="-2" pref="130" max="-2" attributes="0"/>
+                                              <Component id="rmpu_cp1_b" min="-2" pref="130" max="-2" attributes="0"/>
+                                              <Component id="rmpu_cp2_b" min="-2" pref="130" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace min="0" pref="17" max="32767" attributes="0"/>
                                       </Group>
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel19" min="-2" pref="270" max="-2" attributes="0"/>
-                                              <Component id="jLabel20" min="-2" max="-2" attributes="0"/>
-                                          </Group>
-                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="rmpu_blower_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cd1_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cd2_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cp1_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cp2_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="rmpu_cd1_y" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_blower_y" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cd2_y" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cp1_y" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cp2_y" min="-2" pref="130" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace pref="69" max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="rmpu_blower_b" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cd1_b" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cd2_b" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cp1_b" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_cp2_b" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                                  <Component id="jLabel2" min="-2" pref="244" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
-                                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -441,35 +426,35 @@
                                           <Component id="rmpu_blower_b" alignment="3" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="37" max="32767" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel17" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                                       <Component id="rmpu_cd1_r" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_cd1_y" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel17" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                                       <Component id="rmpu_cd1_b" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel18" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                                       <Component id="rmpu_cd2_r" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_cd2_y" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_cd2_b" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel18" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel20" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                                       <Component id="rmpu_cp1_r" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_cp1_y" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_cp1_b" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel19" alignment="3" min="-2" pref="43" max="-2" attributes="0"/>
                                       <Component id="rmpu_cp2_r" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_cp2_y" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_cp2_b" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -497,17 +482,6 @@
                             <Property name="text" type="java.lang.String" value="R"/>
                           </Properties>
                         </Component>
-                        <Component class="javax.swing.JLabel" name="jLabel5">
-                          <Properties>
-                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Monospaced" size="36" style="1"/>
-                            </Property>
-                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                              <Color blue="ff" green="66" red="66" type="rgb"/>
-                            </Property>
-                            <Property name="text" type="java.lang.String" value="Y"/>
-                          </Properties>
-                        </Component>
                         <Component class="javax.swing.JLabel" name="jLabel6">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -517,6 +491,17 @@
                               <Color blue="ff" green="66" red="66" type="rgb"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="B"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="jLabel5">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Monospaced" size="36" style="1"/>
+                            </Property>
+                            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                              <Color blue="ff" green="66" red="66" type="rgb"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Y"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel16">
@@ -807,62 +792,63 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="1420" y="200" width="470" height="430"/>
+                          <AbsoluteConstraints x="1080" y="100" width="270" height="300"/>
                         </Constraint>
                       </Constraints>
 
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="grill_input" min="-2" pref="130" max="-2" attributes="0"/>
-                                      </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                                       <Group type="102" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
-                                              <Component id="jLabel22" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                                                      <Component id="jLabel22" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                                              </Group>
                                           </Group>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="ambient_input" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
-                                              <Component id="room_input" alignment="1" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="grill_input" alignment="0" pref="101" max="32767" attributes="0"/>
+                                              <Component id="ambient_input" max="32767" attributes="0"/>
+                                              <Component id="room_input" alignment="0" max="32767" attributes="0"/>
                                           </Group>
                                       </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace pref="63" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="75" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="grill_input" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="59" max="32767" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel21" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="ambient_input" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel22" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="room_input" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                                  <EmptySpace pref="51" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -871,18 +857,18 @@
                         <Component class="javax.swing.JLabel" name="jLabel7">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Monospaced" size="36" style="3"/>
+                              <Font name="Monospaced" size="24" style="3"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="66" red="66" type="rgb"/>
                             </Property>
-                            <Property name="text" type="java.lang.String" value="TEMPERATURE (&#xb0;C)"/>
+                            <Property name="text" type="java.lang.String" value="TEMPERATURE(&#xb0;C)"/>
                           </Properties>
                         </Component>
                         <Component class="javax.swing.JLabel" name="jLabel1">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Monospaced" size="36" style="1"/>
+                              <Font name="Monospaced" size="24" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -893,7 +879,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel21">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Monospaced" size="36" style="1"/>
+                              <Font name="Monospaced" size="24" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -904,7 +890,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel22">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Monospaced" size="36" style="1"/>
+                              <Font name="Monospaced" size="24" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -959,20 +945,13 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JSeparator" name="jSeparator2">
-                      <Constraints>
-                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="470" y="650" width="1410" height="10"/>
-                        </Constraint>
-                      </Constraints>
-                    </Component>
                     <Container class="javax.swing.JPanel" name="jPanel9">
                       <Properties>
                         <Property name="opaque" type="boolean" value="false"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="1430" y="670" width="430" height="190"/>
+                          <AbsoluteConstraints x="1080" y="460" width="250" height="140"/>
                         </Constraint>
                       </Constraints>
 
@@ -980,33 +959,33 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="1" attributes="0">
-                                  <EmptySpace pref="36" max="32767" attributes="0"/>
-                                  <Component id="jLabel15" min="-2" pref="130" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="wind_speed" min="-2" pref="153" max="-2" attributes="0"/>
-                                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="wind_speed" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
+                                  <EmptySpace pref="22" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel15" min="-2" pref="140" max="-2" attributes="0"/>
-                                      <Group type="102" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
-                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
                                           <Component id="wind_speed" min="-2" pref="61" max="-2" attributes="0"/>
                                       </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
+                                          <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace pref="34" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1015,7 +994,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel13">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Monospaced" size="36" style="1"/>
+                              <Font name="Monospaced" size="24" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="66" red="66" type="rgb"/>
@@ -1029,7 +1008,7 @@
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/images/fan_icon.png"/>
+                              <Image iconType="3" name="/images/fan_icon_small.png"/>
                             </Property>
                           </Properties>
                         </Component>
@@ -1055,7 +1034,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="450" y="660" width="930" height="260"/>
+                          <AbsoluteConstraints x="330" y="500" width="720" height="150"/>
                         </Constraint>
                       </Constraints>
 
@@ -1063,48 +1042,50 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel23" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel24" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="rmpu_tc_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
                                       <Component id="rmpu_tv_r" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="rmpu_tc_y" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_tv_y" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="rmpu_tv_y" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="rmpu_tv_b" min="-2" pref="130" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="rmpu_tc_y" min="-2" pref="130" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="rmpu_tc_b" min="-2" pref="130" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="rmpu_tv_b" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="rmpu_tc_b" min="-2" pref="130" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace pref="52" max="32767" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="jLabel23" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_tc_r" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_tc_y" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_tc_b" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_tv_r" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_tv_y" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="rmpu_tv_b" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel24" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="72" max="32767" attributes="0"/>
+                                  <EmptySpace pref="24" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1113,7 +1094,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel23">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Monospaced" size="36" style="1"/>
+                              <Font name="Monospaced" size="30" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1124,7 +1105,7 @@
                         <Component class="javax.swing.JLabel" name="jLabel24">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                              <Font name="Monospaced" size="36" style="1"/>
+                              <Font name="Monospaced" size="30" style="1"/>
                             </Property>
                             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1224,13 +1205,20 @@
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Component class="javax.swing.JSeparator" name="jSeparator3">
+                    <Component class="javax.swing.JSeparator" name="jSeparator1">
                       <Properties>
                         <Property name="orientation" type="int" value="1"/>
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="1410" y="670" width="10" height="180"/>
+                          <AbsoluteConstraints x="1070" y="140" width="10" height="510"/>
+                        </Constraint>
+                      </Constraints>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="jSeparator2">
+                      <Constraints>
+                        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                          <AbsoluteConstraints x="340" y="490" width="710" height="10"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -1242,7 +1230,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="390" y="0" width="1910" height="1130"/>
+                          <AbsoluteConstraints x="320" y="0" width="1040" height="680"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -1273,7 +1261,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="910" y="70" width="-1" height="-1"/>
+                          <AbsoluteConstraints x="650" y="50" width="-1" height="-1"/>
                         </Constraint>
                       </Constraints>
                     </Component>
@@ -1292,30 +1280,18 @@
                       <Layout>
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="alternator_serial_input" min="-2" pref="255" max="-2" attributes="0"/>
-                                              <Component id="serial_number_label2" min="-2" max="-2" attributes="0"/>
-                                              <Component id="division_label4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                              <Component id="alternator_make_input" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="alternator_save_input" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
-                                              <Component id="alternator_print_input" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-                                          <Component id="view_reports_alternator_btn" min="-2" pref="255" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="view_reports_alternator_btn" min="-2" pref="255" max="-2" attributes="0"/>
+                                      <Component id="alternator_serial_input" min="-2" pref="255" max="-2" attributes="0"/>
+                                      <Component id="serial_number_label2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="division_label4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="alternator_make_input" alignment="0" min="-2" pref="255" max="-2" attributes="0"/>
+                                      <Component id="alternator_save_input" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
+                                      <Component id="alternator_print_input" alignment="0" min="-2" pref="210" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="91" max="32767" attributes="0"/>
+                                  <EmptySpace pref="105" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1326,17 +1302,17 @@
                                   <Component id="serial_number_label2" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="alternator_serial_input" min="-2" pref="61" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="division_label4" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="alternator_make_input" min="-2" pref="61" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                                   <Component id="alternator_save_input" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
                                   <Component id="alternator_print_input" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="view_reports_alternator_btn" min="-2" pref="79" max="-2" attributes="0"/>
-                                  <EmptySpace pref="274" max="32767" attributes="0"/>
+                                  <EmptySpace pref="612" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1389,7 +1365,7 @@
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/images/save_icon.png"/>
+                              <Image iconType="3" name="/images/save_icon_small.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Save"/>
                             <Property name="toolTipText" type="java.lang.String" value="Click to save current data"/>
@@ -1410,7 +1386,7 @@
                               <Color blue="ff" green="ff" red="ff" type="rgb"/>
                             </Property>
                             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                              <Image iconType="3" name="/images/print_icon.png"/>
+                              <Image iconType="3" name="/images/print_icon_small.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="Print"/>
                             <Property name="toolTipText" type="java.lang.String" value="Click to print the current data"/>
@@ -1444,7 +1420,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="550" y="160" width="970" height="350"/>
+                          <AbsoluteConstraints x="410" y="130" width="880" height="300"/>
                         </Constraint>
                       </Constraints>
 
@@ -1462,19 +1438,24 @@
                                           <Component id="jLabel10" min="-2" pref="237" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace pref="128" max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel25" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
-                                      <Component id="alternator1_voltage" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="alternator2_voltage" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
-                                  </Group>
-                                  <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="alternator2_current" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="alternator1_current" min="-2" pref="130" max="-2" attributes="0"/>
-                                      <Component id="jLabel8" min="-2" pref="156" max="-2" attributes="0"/>
-                                  </Group>
                                   <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="alternator1_voltage" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="alternator2_voltage" min="-2" pref="130" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="alternator1_current" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="alternator2_current" min="-2" pref="130" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace pref="180" max="32767" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="jLabel25" min="-2" pref="156" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                  <Component id="jLabel8" min="-2" pref="156" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="154" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1492,13 +1473,11 @@
                                       <Component id="alternator1_voltage" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="alternator1_current" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="60" max="32767" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel9" min="-2" pref="64" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="alternator2_voltage" alignment="3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="alternator2_current" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      </Group>
+                                  <EmptySpace pref="10" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jLabel9" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
+                                      <Component id="alternator2_voltage" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="alternator2_current" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                               </Group>
@@ -1618,7 +1597,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="550" y="570" width="980" height="350"/>
+                          <AbsoluteConstraints x="420" y="440" width="810" height="200"/>
                         </Constraint>
                       </Constraints>
 
@@ -1626,19 +1605,19 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="battery_lbl" min="-2" pref="237" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                                  <EmptySpace pref="33" max="32767" attributes="0"/>
+                                  <Component id="battery_lbl" min="-2" pref="147" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="159" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="jLabel26" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
-                                      <Component id="battery_voltage" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="battery_voltage" min="-2" pref="130" max="-2" attributes="0"/>
+                                      <Component id="jLabel26" min="-2" pref="156" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="203" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jLabel27" min="-2" pref="156" max="-2" attributes="0"/>
                                       <Component id="battery_charging_current" min="-2" pref="130" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1650,13 +1629,13 @@
                                       <Component id="jLabel27" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
                                       <Component id="jLabel26" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
                                       <Component id="battery_voltage" alignment="3" min="-2" max="-2" attributes="0"/>
-                                      <Component id="battery_lbl" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
                                       <Component id="battery_charging_current" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="battery_lbl" alignment="3" min="-2" pref="64" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="156" max="32767" attributes="0"/>
+                                  <EmptySpace pref="38" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1735,7 +1714,7 @@
                       </Properties>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="0" y="0" width="1950" height="1140"/>
+                          <AbsoluteConstraints x="0" y="0" width="1360" height="800"/>
                         </Constraint>
                       </Constraints>
                     </Component>

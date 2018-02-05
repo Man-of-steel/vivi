@@ -5,6 +5,7 @@
  */
 package log;
 
+import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
@@ -61,16 +62,16 @@ public class Report {
             String division = dataMap.get(Constants.RMPU_DIVISION_INPUT);
             String type = dataMap.get(Constants.RMPU_TYPE_INPUT);
             
-            Paragraph subHeading = new Paragraph();
+            Paragraph subHeading = new Paragraph(); 
             
             Paragraph p;
             p = new Paragraph();
-            String serial_make = String.format("SERIAL      : %s      MAKE       : %s", serial, make);
+            String serial_make = String.format("SERIAL      : %-15s MAKE : %-15s", serial, make);
             p.add(new Phrase(serial_make, SUB_FONT));
             subHeading.add(p);
             
             p = new Paragraph();
-            String division_type = String.format("DIVISION  : %s      TYPE        : %s", division, type);
+            String division_type = String.format("DIVISION  : %-15s   TYPE: %-15s", division, type);
             p.add(new Phrase(division_type, SUB_FONT));
             subHeading.add(p);
             subHeading.add(new Paragraph(" "));
@@ -82,17 +83,21 @@ public class Report {
             for(int i = 0; i < Constants.RMPUKeysOrder.length; i++){
                 if(i%3 == 0){
                     dataCell = new PdfPCell(new Phrase(" "));
-                    dataCell.setGrayFill(0.2f);
+                    dataCell.setGrayFill(0.9f);
+                    dataCell.setBorderColor(BaseColor.GRAY);
                     table.addCell(dataCell);
                     
                     dataCell = new PdfPCell(new Phrase(" "));
-                    dataCell.setGrayFill(0.2f);
+                    dataCell.setGrayFill(0.9f);
+                    dataCell.setBorderColor(BaseColor.GRAY);
                     table.addCell(dataCell);
                 }
                 dataCell = new PdfPCell(new Phrase(Constants.RMPULabelsInOrder[i], SUB_FONT));
+                dataCell.setBorderColor(BaseColor.GRAY);
                 table.addCell(dataCell);
                 
                 dataCell = new PdfPCell(new Phrase(dataMap.get(Constants.RMPUKeysOrder[i]), SUB_FONT));
+                dataCell.setBorderColor(BaseColor.GRAY);
                 table.addCell(dataCell);
             }
 
@@ -146,17 +151,21 @@ public class Report {
             for(int i = 0; i < Constants.AlternatorKeysOrder.length; i++){
                 if(i%2 == 0){
                     dataCell = new PdfPCell(new Phrase(" "));
-                    dataCell.setGrayFill(0.2f);
+                    dataCell.setGrayFill(0.9f);
+                    dataCell.setBorderColor(BaseColor.GRAY);
                     table.addCell(dataCell);
                     
                     dataCell = new PdfPCell(new Phrase(" "));
-                    dataCell.setGrayFill(0.2f);
+                    dataCell.setGrayFill(0.9f);
+                    dataCell.setBorderColor(BaseColor.GRAY);
                     table.addCell(dataCell);
                 }
                 dataCell = new PdfPCell(new Phrase(Constants.AlternatorLabelsInOrder[i], SUB_FONT));
+                dataCell.setBorderColor(BaseColor.GRAY);
                 table.addCell(dataCell);
                 
                 dataCell = new PdfPCell(new Phrase(dataMap.get(Constants.AlternatorKeysOrder[i]), SUB_FONT));
+                dataCell.setBorderColor(BaseColor.GRAY);
                 table.addCell(dataCell);
             }
 

@@ -25,6 +25,7 @@ public class Printer {
         try {
             PDDocument document = PDDocument.load(new File(filePath));
             String printerName = System.getenv(Constants.PRINTER_SYSTEM_ENVIRONMENT_VARIABLE_NAME);
+            System.out.println("Printing to printer -> " + printerName);
             PrintService myPrintService = findPrintService(printerName);
             //PrintService myPrintService = PrintServiceLookup.lookupPrintServices(null, null)[0];
             
@@ -32,6 +33,8 @@ public class Printer {
             job.setPageable(new PDFPageable(document));
             job.setPrintService(myPrintService);
             job.print();
+            
+            document.close();
             System.out.println("Done");
             return true;
             
@@ -47,6 +50,7 @@ public class Printer {
         System.out.println(java.util.Arrays.toString(printServices));
         for (PrintService printService : printServices) {
             if (printService.getName().trim().equals(printerName)) {
+                System.out.println("Found printer -> " + printerName);
                 return printService;
             }
         }
